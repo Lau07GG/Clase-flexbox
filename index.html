@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="theme-color" content="#ff5a1f">
+    <meta name="description" content="Super Burguers: hamburguesas, combos y mucho sabor. ¡Hace tu pedido por WhatsApp!">
+
+    <title>Super Burguers | Mucho más que una hamburguesa</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<header class="header">
+    <nav class="navbar container">
+        <a href="#inicio" class="logo">
+            <span class="logo-icon">🍔</span>
+            <span>SUPER <strong>BURGUERS</strong></span>
+        </a>
+
+        <button class="menu-toggle" id="menu-toggle"
+                aria-label="Abrir menú" aria-expanded="false">
+            ☰
+        </button>
+
+        <ul class="nav-links" id="nav-links">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#menu">Nuestro menú</a></li>
+            <li><a href="#nosotros">Nosotros</a></li>
+            <li><a href="#contacto" class="nav-button">¡Pedí ahora!</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section class="hero" id="inicio">
+        <div class="hero-content container">
+            <div class="hero-text">
+                <span class="eyebrow">🔥 EL ANTOJO QUE MERECÉS</span>
+
+                <h1>HAMBURGUESAS<br>
+                    <span>CON TODA LA ONDA.</span>
+                </h1>
+
+                <p>
+                    Pan suave, carne jugosa, queso derretido y
+                    combinaciones increíbles. ¡Tu próxima favorita está acá!
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#menu" class="btn btn-primary">Ver menú 🍟</a>
+                    <a href="#nosotros" class="btn btn-outline">Conocenos</a>
+                </div>
+
+                <div class="hero-badges">
+                    <span>🍔 Mucho sabor</span>
+                    <span>🧀 Ingredientes ricos</span>
+                    <span>📱 Pedidos fáciles</span>
+                </div>
+            </div>
+
+            <div class="hero-image">
+                <img
+                    src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=1000&q=85"
+                    alt="Hamburguesa con queso, lechuga y tomate"
+                >
+                <div class="floating-badge">
+                    <span>🤤</span>
+                    <div>
+                        <strong>¡Una locura!</strong>
+                        <small>Un sabor inolvidable</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="promo-strip">
+        <div class="container promo-content">
+            <span>🍔 BURGERS</span>
+            <span>🍟 PAPAS</span>
+            <span>🥤 BEBIDAS</span>
+            <span>❤️ MUCHO SABOR</span>
+        </div>
+    </section>
+
+    <section class="section menu-section" id="menu">
+        <div class="container">
+
+            <div class="section-heading">
+                <span class="eyebrow">ELEGÍ TU FAVORITA</span>
+                <h2>EL MENÚ <span>BURGUERO</span></h2>
+                <p>Prepará el apetito. Acá empieza lo bueno.</p>
+            </div>
+
+            <div class="filters" aria-label="Filtrar productos">
+                <button class="filter-btn active" data-filter="todos">Todo</button>
+                <button class="filter-btn" data-filter="hamburguesas">🍔 Hamburguesas</button>
+                <button class="filter-btn" data-filter="combos">🍟 Combos</button>
+                <button class="filter-btn" data-filter="acompanamientos">🍟 Acompañamientos</button>
+                <button class="filter-btn" data-filter="bebidas">🥤 Bebidas</button>
+            </div>
+
+            <div class="products-grid">
+
+                <article class="product-card" data-category="hamburguesas">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=700&q=80"
+                             alt="Hamburguesa clásica" loading="lazy">
+                        <span class="product-tag">⭐ Favorita</span>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">HAMBURGUESAS</span>
+                        <h3>La Clásica</h3>
+                        <p>Carne, cheddar, lechuga, tomate y salsa especial.</p>
+                        <div class="product-bottom">
+                            <strong class="price" data-price="8500">$ 8.500</strong>
+                            <button class="add-btn" data-id="clasica"
+                                    data-name="La Clásica" data-price="8500"
+                                    aria-label="Agregar La Clásica">+</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card" data-category="hamburguesas">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1553979459-d2229ba7433a?auto=format&fit=crop&w=700&q=80"
+                             alt="Hamburguesa doble con queso" loading="lazy">
+                        <span class="product-tag tag-hot">🔥 Potente</span>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">HAMBURGUESAS</span>
+                        <h3>Doble Explosiva</h3>
+                        <p>Doble carne, doble cheddar y salsa burger.</p>
+                        <div class="product-bottom">
+                            <strong class="price" data-price="11500">$ 11.500</strong>
+                            <button class="add-btn" data-id="doble"
+                                    data-name="Doble Explosiva" data-price="11500"
+                                    aria-label="Agregar Doble Explosiva">+</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card" data-category="hamburguesas">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=700&q=80"
+                             alt="Hamburguesa con panceta" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">HAMBURGUESAS</span>
+                        <h3>La Bacon</h3>
+                        <p>Carne, cheddar, panceta crocante y salsa ahumada.</p>
+                        <div class="product-bottom">
+                            <strong class="price" data-price="10500">$ 10.500</strong>
+                            <button class="add-btn" data-id="bacon"
+                                    data-name="La Bacon" data-price="10500"
+                                    aria-label="Agregar La Bacon">+</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card" data-category="combos">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1571091718767-18b5b1457add?auto=format&fit=crop&w=700&q=80"
+                             alt="Combo de hamburguesa con papas" loading="lazy">
+                        <span class="product-tag">🍟 Combo</span>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">COMBOS</span>
+                        <h3>Combo Super</h3>
+                        <p>Hamburguesa clásica, papas medianas y bebida.</p>
+                        <div class="product-bottom">
+                            <strong class="price" data-price="12500">$ 12.500</strong>
+                            <button class="add-btn" data-id="combo"
+                                    data-name="Combo Super" data-price="12500"
+                                    aria-label="Agregar Combo Super">+</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card" data-category="acompanamientos">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1573080496219-bb080dd4f877?auto=format&fit=crop&w=700&q=80"
+                             alt="Papas fritas doradas" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">ACOMPAÑAMIENTOS</span>
+                        <h3>Papas Super</h3>
+                        <p>Papas doradas, crujientes y con mucho sabor.</p>
+                        <div class="product-bottom">
+                            <strong class="price" data-price="4500">$ 4.500</strong>
+                            <button class="add-btn" data-id="papas"
+                                    data-name="Papas Super" data-price="4500"
+                                    aria-label="Agregar Papas Super">+</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card" data-category="bebidas">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1581006852262-e4307cf6283a?auto=format&fit=crop&w=700&q=80"
+                             alt="Bebida fría con hielo" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">BEBIDAS</span>
+                        <h3>Bebida fría</h3>
+                        <p>Una bebida refrescante para acompañar tu pedido.</p>
+                        <div class="product-bottom">
+                            <strong class="price" data-price="2500">$ 2.500</strong>
+                            <button class="add-btn" data-id="bebida"
+                                    data-name="Bebida fría" data-price="2500"
+                                    aria-label="Agregar Bebida fría">+</button>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="about-section" id="nosotros">
+        <div class="container about-content">
+            <div class="about-image">
+                <img src="https://images.unsplash.com/photo-1550317138-10000687a72b?auto=format&fit=crop&w=900&q=85"
+                     alt="Hamburguesa recién preparada" loading="lazy">
+            </div>
+
+            <div class="about-text">
+                <span class="eyebrow">MÁS QUE COMIDA</span>
+                <h2>HECHAS PARA<br><span>DISFRUTAR.</span></h2>
+                <p>
+                    En Super Burguers creemos que una buena hamburguesa
+                    puede convertir cualquier día en uno especial.
+                    Nos gustan las combinaciones generosas, el buen sabor
+                    y compartir algo rico con amigos.
+                </p>
+                <a href="#menu" class="btn btn-primary">Encontrá tu favorita 🍔</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="order-section" id="contacto">
+        <div class="container order-content">
+            <span class="eyebrow">¿YA TE TENTASTE?</span>
+            <h2>EL HAMBRE NO ESPERA.</h2>
+            <p>Armá tu pedido y mandanoslo por WhatsApp.</p>
+            <a href="#menu" class="btn btn-light">Elegir mi hamburguesa 🍔</a>
+        </div>
+    </section>
+
+</main>
+
+<aside class="cart-panel" id="cart-panel" aria-label="Tu pedido">
+    <div class="cart-header">
+        <div>
+            <span class="eyebrow">TU SELECCIÓN</span>
+            <h2>Mi pedido 🛒</h2>
+        </div>
+        <button id="close-cart" class="close-cart" aria-label="Cerrar carrito">×</button>
+    </div>
+
+    <div id="cart-items" class="cart-items">
+        <p class="empty-cart">Todavía no agregaste nada. ¡Elegí algo rico! 🍔</p>
+    </div>
+
+    <div class="cart-footer">
+        <div class="cart-total">
+            <span>Total estimado</span>
+            <strong id="cart-total">$ 0</strong>
+        </div>
+
+        <label for="customer-name">Tu nombre</label>
+        <input id="customer-name" type="text" maxlength="60"
+               placeholder="¿Cómo te llamás?">
+
+        <label for="order-notes">Notas del pedido (opcional)</label>
+        <textarea id="order-notes" rows="2" maxlength="300"
+                  placeholder="Ej. Sin tomate, extra salsa..."></textarea>
+
+        <button id="checkout-btn" class="btn btn-whatsapp">
+            Enviar pedido por WhatsApp
+        </button>
+        <small>El pedido se enviará cuando lo confirmes en WhatsApp.</small>
+    </div>
+</aside>
+
+<div class="cart-overlay" id="cart-overlay"></div>
+
+<button class="cart-fab" id="open-cart" aria-label="Abrir carrito">
+    🛒 <span id="cart-count">0</span>
+</button>
+
+<footer class="footer">
+    <div class="container footer-content">
+        <a href="#inicio" class="logo">
+            <span class="logo-icon">🍔</span>
+            <span>SUPER <strong>BURGUERS</strong></span>
+        </a>
+        <p>Hecho con hambre y mucho amor ❤️</p>
+        <p class="copyright">© <span id="year"></span> Super Burguers. Todos los derechos reservados.</p>
+    </div>
+</footer>
+
+<script>
+    const WHATSAPP_NUMBER = "5493814969133";
+
+const money = new Intl.NumberFormat("es-AR", {
+    style: "currency",
+    currency: "ARS",
+    maximumFractionDigits: 0
+});
+
+const cart = new Map();
+
+const cartPanel = document.getElementById("cart-panel");
+const cartOverlay = document.getElementById("cart-overlay");
+const cartItems = document.getElementById("cart-items");
+const cartTotal = document.getElementById("cart-total");
+const cartCount = document.getElementById("cart-count");
+
+const openCartButton = document.getElementById("open-cart");
+const closeCartButton = document.getElementById("close-cart");
+const checkoutButton = document.getElementById("checkout-btn");
+
+const menuToggle = document.getElementById("menu-toggle");
+const navLinks = document.getElementById("nav-links");
+
+menuToggle.addEventListener("click", () => {
+    const isOpen = navLinks.classList.toggle("open");
+
+    menuToggle.setAttribute("aria-expanded", String(isOpen));
+    menuToggle.setAttribute(
+        "aria-label",
+        isOpen ? "Cerrar menú" : "Abrir menú"
+    );
+
+    menuToggle.textContent = isOpen ? "×" : "☰";
+});
+
+navLinks.querySelectorAll("a").forEach(link => {
+    link.addEventListener("click", () => {
+        navLinks.classList.remove("open");
+        menuToggle.setAttribute("aria-expanded", "false");
+        menuToggle.setAttribute("aria-label", "Abrir menú");
+        menuToggle.textContent = "☰";
+    });
+});
+
+const filterButtons = document.querySelectorAll(".filter-btn");
+const productCards = document.querySelectorAll(".product-card");
+
+filterButtons.forEach(button => {
+    button.addEventListener("click", () => {
+        const category = button.dataset.filter;
+
+        filterButtons.forEach(item => {
+            item.classList.toggle("active", item === button);
+        });
+
+        productCards.forEach(card => {
+            const matches =
+                category === "todos" ||
+                card.dataset.category === category;
+
+            card.hidden = !matches;
+        });
+    });
+});
+
+function openCart() {
+    cartPanel.classList.add("open");
+    cartOverlay.classList.add("open");
+    document.body.style.overflow = "hidden";
+    closeCartButton.focus();
+}
+
+function closeCart() {
+    cartPanel.classList.remove("open");
+    cartOverlay.classList.remove("open");
+    document.body.style.overflow = "";
+    openCartButton.focus();
+}
+
+openCartButton.addEventListener("click", openCart);
+closeCartButton.addEventListener("click", closeCart);
+cartOverlay.addEventListener("click", closeCart);
+
+document.addEventListener("keydown", event => {
+    if (event.key === "Escape" && cartPanel.classList.contains("open")) {
+        closeCart();
+    }
+});
+
+document.querySelectorAll(".add-btn").forEach(button => {
+    button.addEventListener("click", () => {
+        const id = button.dataset.id;
+        const name = button.dataset.name;
+        const price = Number(button.dataset.price);
+
+        if (!id || !name || !Number.isSafeInteger(price) || price <= 0) {
+            alert("No se pudo agregar este producto. Revisá sus datos.");
+            return;
+        }
+
+        if (cart.has(id)) {
+            cart.get(id).quantity += 1;
+        } else {
+            cart.set(id, {
+                id,
+                name,
+                price,
+                quantity: 1
+            });
+        }
+
+        renderCart();
+        openCart();
+    });
+});
+
+function changeQuantity(id, amount) {
+    const item = cart.get(id);
+
+    if (!item) return;
+
+    item.quantity += amount;
+
+    if (item.quantity <= 0) {
+        cart.delete(id);
+    }
+
+    renderCart();
+}
+
+function removeProduct(id) {
+    cart.delete(id);
+    renderCart();
+}
+
+function renderCart() {
+    cartItems.replaceChildren();
+
+    let total = 0;
+    let count = 0;
+
+    cart.forEach(item => {
+        total += item.price * item.quantity;
+        count += item.quantity;
+
+        const row = document.createElement("div");
+        row.className = "cart-item";
+
+        const details = document.createElement("div");
+
+        const title = document.createElement("h3");
+        title.textContent = item.name;
+
+        const subtotal = document.createElement("p");
+        subtotal.textContent = money.format(item.price * item.quantity);
+
+        const controls = document.createElement("div");
+        controls.className = "quantity-controls";
+
+        const minus = document.createElement("button");
+        minus.type = "button";
+        minus.textContent = "−";
+        minus.setAttribute("aria-label", "Quitar una unidad de " + item.name);
+        minus.addEventListener("click", () => changeQuantity(item.id, -1));
+
+        const quantity = document.createElement("span");
+        quantity.textContent = item.quantity;
+
+        const plus = document.createElement("button");
+        plus.type = "button";
+        plus.textContent = "+";
+        plus.setAttribute("aria-label", "Agregar una unidad de " + item.name);
+        plus.addEventListener("click", () => changeQuantity(item.id, 1));
+
+        controls.append(minus, quantity, plus);
+        details.append(title, subtotal, controls);
+
+        const remove = document.createElement("button");
+        remove.type = "button";
+        remove.className = "remove-btn";
+        remove.textContent = "Eliminar";
+        remove.addEventListener("click", () => removeProduct(item.id));
+
+        row.append(details, remove);
+        cartItems.append(row);
+    });
+
+    if (cart.size === 0) {
+        const empty = document.createElement("p");
+        empty.className = "empty-cart";
+        empty.textContent =
+            "Todavía no agregaste nada. ¡Elegí algo rico! 🍔";
+        cartItems.append(empty);
+    }
+
+    cartTotal.textContent = money.format(total);
+    cartCount.textContent = count;
+    openCartButton.setAttribute(
+        "aria-label",
+        `Abrir carrito. ${count} productos`
+    );
+}
+
+checkoutButton.addEventListener("click", () => {
+    if (cart.size === 0) {
+        alert("Tu carrito está vacío. Agregá algún producto primero.");
+        return;
+    }
+
+    // Evita enviar si todavía quedó el número de ejemplo.
+    if (!/^\d{10,15}$/.test(WHATSAPP_NUMBER) ||
+        WHATSAPP_NUMBER === "5493810000000") {
+        alert(
+            "Antes de realizar pedidos, reemplazá WHATSAPP_NUMBER " +
+            "en script.js por el número real del negocio, " +
+            "con código de país y área, sin espacios ni signos."
+        );
+        return;
+    }
+
+    const customerName =
+        document.getElementById("customer-name").value.trim();
+
+    const notes =
+        document.getElementById("order-notes").value.trim();
+
+    const lines = [
+        "🍔 *¡Hola Super Burguers! Quiero hacer este pedido:*",
+        ""
+    ];
+
+    if (customerName) {
+        lines.push("👤 Nombre: " + customerName);
+        lines.push("");
+    }
+
+    let total = 0;
+
+    cart.forEach(item => {
+        const subtotal = item.price * item.quantity;
+        total += subtotal;
+
+        lines.push(
+            `• ${item.name} x${item.quantity} — ${money.format(subtotal)}`
+        );
+    });
+
+    lines.push("");
+    lines.push("*TOTAL ESTIMADO: " + money.format(total) + "*");
+
+    if (notes) {
+        lines.push("");
+        lines.push("📝 Notas: " + notes);
+    }
+
+    lines.push("");
+    lines.push("¿Me confirman la disponibilidad y el total final?");
+
+    const message = encodeURIComponent(lines.join("\n"));
+    const whatsappURL =
+        `https://wa.me/${WHATSAPP_NUMBER}?text=${message}`;
+
+    const newWindow = window.open(whatsappURL, "_blank");
+
+    if (newWindow) {
+        newWindow.opener = null;
+    } else {
+        window.location.href = whatsappURL;
+    }
+});
+
+document.getElementById("year").textContent =
+    new Date().getFullYear();
+
+renderCart();
+</script>
+</html>
